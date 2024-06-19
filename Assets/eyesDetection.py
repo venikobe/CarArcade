@@ -16,7 +16,7 @@ blinkCounter = 0
 counter = 0
 color = (255, 0, 255)
 
-serverAdressPort = ('127.0.0.1', 5054)
+serverAdressPort = ('127.0.0.1', 5052)
 
 while True:
     
@@ -47,7 +47,7 @@ while True:
             ratioList.pop(0)
         ratioAvg = sum(ratioList) / len(ratioList)
 
-        if ratioAvg < 31 and counter == 0:
+        if ratioAvg < 30 and counter == 0:
             if blinkCounter == 3:
                 blinkCounter = 0
             else:

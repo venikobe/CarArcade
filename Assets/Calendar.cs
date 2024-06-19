@@ -13,7 +13,7 @@ public class Calendar : MonoBehaviour
     //[SerializeField] private string _curentDateString;
     void Start()
     {
-        ChangeText(DateText,_curentDate.ToString("d"));
+        OnStart();
     }
 
     public void AddDate()
@@ -29,4 +29,6 @@ public class Calendar : MonoBehaviour
     }
 
     private void ChangeText(TextMeshProUGUI _text, string _string){_text.SetText(_string);}
+    
+    public void OnStart(){_curentDate = DateTime.Today;ChangeText(DateText,_curentDate.ToString("d"));}
 }

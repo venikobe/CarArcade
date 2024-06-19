@@ -9,7 +9,7 @@ public class MotorControll : MonoBehaviour
 {
     Thread motorThread;
 
-    private SerialPort dataStream= new SerialPort("COM4", 9600);
+    private SerialPort dataStream= new SerialPort("COM3", 9600);
 
     public string receivingString;
     public float motorInput;
@@ -47,7 +47,7 @@ public class MotorControll : MonoBehaviour
             _inputlist.Add(motorInput);
             if(_inputlist.Count > 10) {_inputlist.RemoveAt(0);}
             float inputAverage = Queryable.Average(_inputlist.AsQueryable());
-            if(inputAverage>-0.08 && inputAverage<-0.05){StickBool = false;}
+            if(inputAverage>0.03 && inputAverage<0.06){StickBool = false;}
             else{StickBool = true;}
 
         }

@@ -44,7 +44,6 @@ namespace Stocks.Views
 
         private void Update()
         {
-            CashValue.Set(Service.CashValue);
             StockCount.Set(Service.StockCount);
             StockValue.Set(Service.StockValue);
             TotalValue.Set(Service.TotalValue);

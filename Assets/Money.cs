@@ -23,5 +23,7 @@ public class Money : MonoBehaviour
         else{return this.CarMoney;}
     }
 
+    public void OnStart(){CarMoney = 0; OwnerMoney = 250;}
+
 
 }

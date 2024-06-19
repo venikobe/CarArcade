@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SightManage : MonoBehaviour
@@ -6,9 +7,13 @@ public class SightManage : MonoBehaviour
     [SerializeField] GameObject cam;
     [SerializeField] GameObject cam1;
 
-    [SerializeField] GameObject _carCanvas;
+    public GameObject _carCanvas;
 
-    [SerializeField] GameObject _stockCanvas;
+    public GameObject _stockCanvas;
+
+
+    public GameObject picture;
+    [SerializeField] private Sprite[] spritebase;
     
     void Update()
     { 

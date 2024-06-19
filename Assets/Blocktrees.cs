@@ -13,7 +13,7 @@ public class Blocktrees : MonoBehaviour
                 StartCoroutine(RespawnTrees(child));
                 child.gameObject.SetActive(false);
             }
-            _money.AddMoney(true,500);
+            _money.AddMoney(true,100);
         }
     }
 
